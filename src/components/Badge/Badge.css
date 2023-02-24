@@ -1,0 +1,12 @@
+.badge {
+  border-radius: var(
+    --border-radius-badge
+  ); /* background-color: hsl(var(--clr-primary-900), 0.7); */
+  /* background-color: hsl(var(--clr-primary-900)); */
+  max-width: fit-content;
+  margin-left: 10px;
+}
+
+.badge_text {
+  padding: 0.25rem 0.9375rem;
+}

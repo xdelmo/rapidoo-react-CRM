@@ -1,0 +1,51 @@
+.button {
+  border-radius: var(--border-radius-botton);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  max-width: fit-content;
+  padding: 0.5rem 0.9375rem;
+  margin-left: 0.625rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.button-small {
+  font-size: 0.75rem;
+}
+
+.button-medium {
+  font-size: 0.875rem;
+}
+
+.button-light {
+  color: hsl(var(--clr-primary-800));
+  background-color: hsl(var(--clr-primary-050));
+  box-shadow: 0 0.375rem 0.5rem 0 rgba(0, 0, 0, 0.06);
+}
+
+.button-light:hover {
+  color: hsl(var(--clr-primary-600));
+  background-color: hsl(var(--clr-primary-100));
+}
+
+.button-light:active {
+  color: hsl(var(--clr-primary-050));
+  background-color: hsl(var(--clr-primary-800));
+}
+
+.button-dark {
+  color: hsl(var(--clr-primary-050));
+  background-color: hsl(var(--clr-gradient-primary-3));
+  box-shadow: 0 0.375rem 0.5rem 0 rgba(0, 0, 0, 0.06);
+}
+
+.button-dark:hover {
+  color: hsl(var(--clr-primary-050));
+  background-color: hsl(var(--clr-primary-600));
+}
+
+.button-dark:active {
+  background-color: hsl(var(--clr-primary-500));
+}
