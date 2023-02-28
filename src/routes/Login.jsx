@@ -28,6 +28,7 @@ function Login() {
   };
 
   const style = {
+    // border and label color
     "& label.Mui-focused": {
       color: "hsl(var(--clr-primary-900))",
     },
@@ -36,6 +37,9 @@ function Login() {
         border: "1px solid hsl(var(--clr-primary-900))",
       },
     },
+    // full border
+    "& legend": { display: "none" },
+    "& fieldset": { top: 0 },
   };
 
   return (
@@ -49,9 +53,27 @@ function Login() {
           sx={{ mt: 1, width: "25ch" }}
         >
           <div>
-            {" "}
+            {/* email input */}
             <StyledEngineProvider injectFirst>
-              <InputLabel disabled={true}></InputLabel>
+              <FormControl>
+                <TextField
+                  margin="normal"
+                  sx={style}
+                  id="standard-password-input"
+                  className="textfield"
+                  name="email"
+                  label="Email"
+                  type="email"
+                  autoComplete="current-email"
+                  variant="outlined"
+                  placeholder="Email"
+                  required
+                />
+              </FormControl>
+            </StyledEngineProvider>
+            {/* password input */}
+            <StyledEngineProvider injectFirst>
+              <InputLabel shrink={true}></InputLabel>
               <FormControl>
                 <TextField
                   sx={style}
@@ -89,33 +111,17 @@ function Login() {
                 />
               </FormControl>
             </StyledEngineProvider>
-            <FormControl>
-              <StyledEngineProvider injectFirst>
-                <TextField
-                  margin="normal"
-                  sx={style}
-                  id="standard-password-input"
-                  className="textfield"
-                  name="email"
-                  label="Email"
-                  type="email"
-                  autoComplete="current-email"
-                  variant="outlined"
-                  placeholder="Email"
-                  required
-                />
-              </StyledEngineProvider>
-            </FormControl>
+            {/* button form */}
             <StyledEngineProvider injectFirst>
               <Button
-                fullWidth="true"
+                fullWidth={true}
                 margin="normal"
                 type="submit"
                 variant="contained"
               >
                 Login
               </Button>
-            </StyledEngineProvider>
+            </StyledEngineProvider>{" "}
           </div>
         </Box>
       </div>
