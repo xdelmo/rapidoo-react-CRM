@@ -57,12 +57,14 @@ function Login() {
             <StyledEngineProvider injectFirst>
               <FormControl>
                 <TextField
+                  InputLabelProps={{
+                    shrink: true,
+                  }}
                   margin="normal"
                   sx={style}
                   id="standard-password-input"
                   className="textfield"
                   name="email"
-                  label="Email"
                   type="email"
                   autoComplete="current-email"
                   variant="outlined"
@@ -76,12 +78,14 @@ function Login() {
               <InputLabel shrink={true}></InputLabel>
               <FormControl>
                 <TextField
+                  InputLabelProps={{
+                    shrink: true,
+                  }}
                   sx={style}
                   margin="normal"
                   required
                   fullWidth
                   name="password"
-                  label="Password"
                   placeholder="Password"
                   type={showPassword ? "text" : "password"}
                   id="password"
@@ -96,11 +100,11 @@ function Login() {
                           edge="end"
                         >
                           {showPassword ? (
-                            <div className="icon-medium flex-center">
+                            <div>
                               <Visibility />
                             </div>
                           ) : (
-                            <div className="icon-medium flex-center">
+                            <div>
                               <Visibility />
                             </div>
                           )}
