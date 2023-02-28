@@ -1,0 +1,39 @@
+/* ------------------- */
+/* Utility classes     */
+/* ------------------- */
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+
+.d-block {
+  display: block;
+}
+
+.d-none {
+  display: none;
+}
+
+.border-full-primary {
+  border: 0.0625rem solid hsl(var(--clr-primary-900));
+}

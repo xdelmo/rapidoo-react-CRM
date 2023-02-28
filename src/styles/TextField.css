@@ -1,0 +1,19 @@
+.MuiInputBase-root.MuiOutlinedInput-root {
+  padding: 0px;
+  border-radius: 15px;
+  background-color: hsl(var(--clr-primary-050));
+  color: hsl(var(--clr-primary-900));
+  font-family: var(--ff-serif);
+  outline: none;
+}
+.MuiInputBase-root.MuiOutlinedInput-root:hover {
+  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.06);
+}
+
+/* .MuiInputBase-root.MuiOutlinedInput-root > fieldset {
+  border: none;
+} */
+
+.MuiInputBase-input.MuiOutlinedInput-input {
+  padding: 16px;
+}
