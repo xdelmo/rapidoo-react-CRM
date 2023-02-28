@@ -7,7 +7,7 @@ import { Button, FormControl } from "@mui/material";
 import IconButton from "@mui/material/IconButton";
 import InputAdornment from "@mui/material/InputAdornment";
 import InputLabel from "@mui/material/InputLabel";
-import Visibility from "../components/SVGs/Visibility";
+import Visibility from "../components/SVGs/VisibilityPassword";
 
 function Login() {
   const [showPassword, setShowPassword] = React.useState(false);
@@ -92,22 +92,15 @@ function Login() {
                   autoComplete="current-password"
                   InputProps={{
                     endAdornment: (
-                      <InputAdornment position="end">
+                      <InputAdornment position="end" className="flex-center">
                         <IconButton
+                          sx={{ marginRight: "16px" }}
                           aria-label="toggle password visibility"
                           onClick={handleClickShowPassword}
                           onMouseDown={handleMouseDownPassword}
                           edge="end"
                         >
-                          {showPassword ? (
-                            <div>
-                              <Visibility />
-                            </div>
-                          ) : (
-                            <div>
-                              <Visibility />
-                            </div>
-                          )}
+                          {showPassword ? <Visibility /> : <Visibility />}
                         </IconButton>
                       </InputAdornment>
                     ),
