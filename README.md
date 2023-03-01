@@ -10,7 +10,7 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript server repository for Rapidoo CRM server api.
+[ReactJS](https://github.com/facebook/react) framework Javascript front-end repository for Rapidoo CRM.
 
 ## Available Scripts
 
