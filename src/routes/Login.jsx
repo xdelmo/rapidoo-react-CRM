@@ -11,6 +11,8 @@ import Visibility from "../components/SVGs/VisibilityPassword";
 
 function Login() {
   const [showPassword, setShowPassword] = React.useState(false);
+  const [loginValue, setLoginValue] = useState("");
+  const [passwordValue, setPasswordValue] = useState("");
 
   const handleClickShowPassword = () => setShowPassword((show) => !show);
 
@@ -70,6 +72,7 @@ function Login() {
                   variant="outlined"
                   placeholder="Email"
                   required
+                  onChange={(e) => setLoginValue(e.target.value)}
                 />
               </FormControl>
             </StyledEngineProvider>
@@ -90,6 +93,7 @@ function Login() {
                   type={showPassword ? "text" : "password"}
                   id="password"
                   autoComplete="current-password"
+                  onChange={(e) => setPasswordValue(e.target.value)}
                   InputProps={{
                     endAdornment: (
                       <InputAdornment position="end" className="flex-center">
@@ -115,6 +119,7 @@ function Login() {
                 margin="normal"
                 type="submit"
                 variant="contained"
+                disabled={loginValue.length === 0 || passwordValue.length === 0}
               >
                 Login
               </Button>
