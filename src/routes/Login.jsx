@@ -55,7 +55,7 @@ function Login() {
           <div>
             {/* email input */}
             <StyledEngineProvider injectFirst>
-              <FormControl>
+              <FormControl fullWidth={true}>
                 <TextField
                   InputLabelProps={{
                     shrink: true,
