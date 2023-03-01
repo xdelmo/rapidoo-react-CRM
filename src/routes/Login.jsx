@@ -9,7 +9,7 @@ import InputAdornment from "@mui/material/InputAdornment";
 import Visibility from "../components/SVGs/VisibilityPassword";
 
 function Login() {
-  const [showPassword, setShowPassword] = React.useState(false);
+  const [showPassword, setShowPassword] = useState(false);
   const [loginValue, setLoginValue] = useState("");
   const [passwordValue, setPasswordValue] = useState("");
 
@@ -23,7 +23,7 @@ function Login() {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     console.log({
-      email: data.get("email"),
+      username: data.get("username"),
       password: data.get("password"),
     });
   };
@@ -54,7 +54,7 @@ function Login() {
           sx={{ mt: 1, width: "25ch" }}
         >
           <div>
-            {/* email input */}
+            {/* username input */}
             <StyledEngineProvider injectFirst>
               <FormControl fullWidth={true}>
                 <TextField
@@ -65,11 +65,10 @@ function Login() {
                   sx={style}
                   id="standard-password-input"
                   className="textfield"
-                  name="email"
-                  type="email"
-                  autoComplete="current-email"
+                  name="username"
+                  type="text"
                   variant="outlined"
-                  placeholder="Email"
+                  placeholder="Username"
                   required
                   onChange={(e) => setLoginValue(e.target.value)}
                 />
