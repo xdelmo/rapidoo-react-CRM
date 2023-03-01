@@ -1,11 +1,8 @@
 import React from "react";
+import Root from "../pages/Root";
 
 function root() {
-  return (
-    <div>
-      <div>root</div>
-    </div>
-  );
+  return <Root />;
 }
 
 export default root;
