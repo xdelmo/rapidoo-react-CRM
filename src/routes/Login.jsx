@@ -6,7 +6,6 @@ import { StyledEngineProvider } from "@mui/material/styles";
 import { Button, FormControl } from "@mui/material";
 import IconButton from "@mui/material/IconButton";
 import InputAdornment from "@mui/material/InputAdornment";
-import InputLabel from "@mui/material/InputLabel";
 import Visibility from "../components/SVGs/VisibilityPassword";
 
 function Login() {
@@ -78,7 +77,6 @@ function Login() {
             </StyledEngineProvider>
             {/* password input */}
             <StyledEngineProvider injectFirst>
-              <InputLabel shrink={true}></InputLabel>
               <FormControl>
                 <TextField
                   InputLabelProps={{
