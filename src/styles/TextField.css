@@ -1,13 +1,13 @@
 .MuiInputBase-root.MuiOutlinedInput-root {
   padding: 0px;
-  border-radius: 15px;
+  border-radius: 0.9375rem;
   background-color: hsl(var(--clr-primary-050));
   color: hsl(var(--clr-primary-900));
   font-family: var(--ff-serif);
   outline: none;
 }
 .MuiInputBase-root.MuiOutlinedInput-root:hover {
-  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: 0 0.375rem 0.5rem 0 rgba(0, 0, 0, 0.06);
 }
 
 /* .MuiInputBase-root.MuiOutlinedInput-root > fieldset {
@@ -15,5 +15,5 @@
 } */
 
 .MuiInputBase-input.MuiOutlinedInput-input {
-  padding: 16px;
+  padding: 1rem;
 }
