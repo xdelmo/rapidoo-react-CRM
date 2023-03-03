@@ -7,7 +7,7 @@ function Root() {
   //   redirect to login page
   useEffect(() => {
     navigate("/login");
-  }, []);
+  }, [navigate]);
 
   return (
     <div>
