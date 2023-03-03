@@ -1,13 +1,9 @@
-import Badge from "./components/Badge/Badge";
-import Button from "./components/Button/Button";
-import Icon from "./components/Icon/Icon";
+import Routes from "./routes/Routes"
 
 function App() {
   return (
     <div className="App">
-      <Badge />
-      <Button />
-      <Icon />
+        <Routes />
     </div>
   );
 }
