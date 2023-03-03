@@ -23,12 +23,16 @@ function Login() {
 
   const navigate = useNavigate();
 
+  const api = axios.create({
+    baseURL: "http://127.0.0.1:3000/api/rapidoo/",
+  });
+
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
 
     axios
-      .post("http://127.0.0.1:3000/api/rapidoo/auth/login", {
+      .post(`${api.defaults.baseURL}auth/login`, {
         username: data.get("username"),
         password: data.get("password"),
       })
